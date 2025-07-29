@@ -1,0 +1,152 @@
+/* General styles for the body */
+body {
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.LGYUipwp2Q1PCN0FdcQCVgHaEo&pid=Api&P=0&h=180");
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Styles for the main content area */
+.main-content {
+    background-color: rgb(29, 13, 166);
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Profile image styles */
+.profile img {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+/* Skills section styles */
+.skills-track {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-tag {
+    background-color: powderblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 13, 166);
+}
+
+.btn-secondary {
+    background-color: rgb(29, 13, 166);
+    color: rgb(255, 255, 255);
+}
+
+/* Timeline styles */
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .profile img {
+        height: 150px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .skills-track {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .profile img {
+        height: 120px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .skill-tag {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

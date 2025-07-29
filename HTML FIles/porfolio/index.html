@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Background Galaxy Video -->
+    <video class="back-vid" src="videos/galaxy.mp4" loop autoplay muted playsinline></video>
+
+    <!-- Header -->
+    <header>
+      <div class="left">
+        <img src="images/logo.png" alt="Logo" />
+        <h1>Your Name</h1>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="box-icons">
+          <a href="#"><i class="icon-youtube">YT</i></a>
+          <a href="#"><i class="icon-github">GH</i></a>
+          <a href="#"><i class="icon-linkedin">IN</i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Black Hole Video -->
+    <div class="black-hole-box">
+      <video src="videos/blackhole.mp4" loop autoplay muted playsinline></video>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-info">
+        <div class="hero-info-title">
+          <h1>Front-End Developer Portfolio</h1>
+          <p>Providing the best project experience.</p>
+          <button>Contact Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <h1>Hello There</h1>
+      <div class="info-cards">
+        <div class="card">
+          <h1>Responsive Design</h1>
+          <p>Built to look great on all devices.</p>
+          <img src="images/image1.png" alt="Responsive Design" />
+        </div>
+        <div class="card">
+          <h1>Animation</h1>
+          <p>Smooth and subtle UI animations.</p>
+          <img src="images/image2.png" alt="Animations" />
+        </div>
+        <div class="card">
+          <h1>Clean Code</h1>
+          <p>Structured and well-commented code.</p>
+          <img src="images/image3.png" alt="Clean Code" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="my-projects" id="projects">
+      <h1>My Projects</h1>
+      <div class="project-card">
+        <div class="project-vidbox">
+          <video src="videos/project1.mp4" id="project-video-1" muted></video>
+        </div>
+        <div class="project-info">
+          <h1>AI Fitness Advisor</h1>
+          <p>A smart assistant that helps create custom fitness routines using AI.</p>
+          <button>Visit Website</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <h1>My Skills</h1>
+      <div class="skills-box">
+        <img src="images/digitalbrain.png" class="skills-image" alt="Digital Brain" />
+        <div class="designer">
+          <h1 class="gradient">Designer</h1>
+          <p>Crafting beautiful and user-friendly interfaces.</p>
+        </div>
+        <div class="coder">
+          <h1 class="gradient">Coder</h1>
+          <p>Writing clean and scalable code.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <h1>Let's Talk</h1>
+      <div class="social-box">
+        <div class="social-item">Instagram</div>
+        <div class="social-item">LinkedIn</div>
+        <div class="social-item">Twitter</div>
+      </div>
+      <div class="contact-box">
+        <p>Drop me a message below:</p>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Subject" />
+        <button>Send Message</button>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <h1>Thank You for Visiting!</h1>
+  </footer>
+</body>
+</html>

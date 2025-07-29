@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Period Tracker</title>
+  <link rel="stylesheet" href="project10.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🩸 Period Tracker</h1>
+    <form id="tracker-form">
+      <label for="startDate">Last Period Start Date:</label>
+      <input type="date" id="startDate" required />
+
+      <label for="cycleLength">Average Cycle Length (days):</label>
+      <input type="number" id="cycleLength" min="20" max="45" required />
+
+      <button type="submit">Predict Next Period</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById("tracker-form");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const startDate = new Date(document.getElementById("startDate").value);
+      const cycleLength = parseInt(document.getElementById("cycleLength").value);
+
+      if (!isNaN(startDate.getTime()) && cycleLength) {
+        const nextPeriod = new Date(startDate);
+        nextPeriod.setDate(startDate.getDate() + cycleLength);
+
+        result.innerHTML = `
+          <h3>Next Period Prediction:</h3>
+          <p>Your next period may start around <strong>${nextPeriod.toDateString()}</strong>.</p>
+        `;
+      } else {
+        result.textContent = "Please enter valid inputs.";
+      }
+    });
+  </script>
+</body>
+</html>
